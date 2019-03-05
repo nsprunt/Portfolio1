@@ -28,10 +28,17 @@ nav ul li a {
   }
 
 .intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   min-height: 55vh;
   padding-top: 45vh;
   background-color: #9BBFAB;
-  text-align: center;
+  }
+
+  .intro div {
+    min-width: 200px;
+    border: 2px solid yellow;
   }
 
   .work {
