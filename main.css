@@ -37,8 +37,10 @@ nav ul li a {
   }
 
   .intro div {
-    min-width: 200px;
-    border: 2px solid yellow;
+    width: 400px;
+    height: 340px;
+    /* border: 2px solid yellow; */
+    text-align: center;
   }
 
   .work {
@@ -76,12 +78,6 @@ nav ul li a {
 
 #navbar {
   background-color: #9BBFAB;
-}
-
-#welcome-section {
-  min-height: 55vh;
-  padding-top: 45vh;
-  background-color: #9bbfab;
 } 
 
 #projects {
