@@ -1,12 +1,29 @@
+* {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(229 177 58);
+    font-weight: Bold;
+    font-size: 3.0rem;
+    padding: 20px;
+
+
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; 
+    background-color: rgb(229 177 58);
 }
 
 .container div {
     width: 200px;
     margin: 10px;
     text-align: center;
-    
+    background-color: black;
+    color: white;
 }
+
