@@ -7,11 +7,20 @@ pokemon.forEach((singleMon) => {
     })
     .then(function(myJson) {
         console.log(myJson)
-        createPokeCard(myJson)
+        //createPokeCard(myJson)
     })
 })
 
-
+/*function matchIdToImage(aPokemon) {
+    if (aPokemon.id < 10) {
+        aPokemon.imageID = "00" + aPokemon.id
+    }
+    if(aPokemon.id > 9 && aPokemon.id < 100 ) {
+        aPokemon.imageID = aPokemon.id
+    }
+    aPokemon.name = aPokemon.name.charAt(0).toUpperCase() + aPokemon.slice(1)
+    return aPokemon
+}*/
 
 console.log(pokemon)
 
@@ -69,3 +78,4 @@ function createPokeCard(pokedata) {
 }
 
 createPokeCard(newPokemon) */
+
