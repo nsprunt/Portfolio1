@@ -1,6 +1,11 @@
 import { pokemon } from '../data/pokemon.js'
 
-console.log(pokemon)
+class Pokemon {
+    constructor(id, name) {
+        this.id = 0,
+        this.name = name
+    }
+}
 
 const mainContainer = document.querySelector('.container')
 
@@ -14,7 +19,12 @@ function createPokeCard(pokeData) {
 
     let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
     caption.textContent = upperName
+if(pokeData.id !== 0) {
     image.src = `../images/${pokeData.id}${upperName}.png`
+} else {
+    image.src = `../images/pokeball.png`
+}
+
     figure.appendChild(image)
     figure.appendChild(caption)
     card.appendChild(figure)
@@ -31,13 +41,17 @@ pokemon.forEach((singleMon) => {
         createPokeCard(myJson)
     })
 })
-/*class Pokemon {
-    constructor(id, name) {
-        this.id = id,
-        this.name = name
-    }
-}
 
+
+const newPokemonButton = document.querySelector('button')
+
+newPokemonButton.addEventListener('click', function() {
+    let newPokeName = prompt('Enter the name of your new pokemon')
+    createPokeCard(new Pokemon(80,newPokeName))
+});
+
+
+/*
 let newPokemon = new Pokemon(80, 'Thoremon')
 
 console.log(newPokemon)

@@ -14,3 +14,11 @@ main {
     margin: 8px;
     text-align: center;
 }
+
+img {
+    width: 220px;
+}
+
+button {
+    width: 300px;
+}
