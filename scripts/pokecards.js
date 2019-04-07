@@ -9,6 +9,7 @@ class Pokemon {
 
 const mainContainer = document.querySelector('.container')
 
+
 function createPokeCard(pokeData) {
     console.log(pokeData.id)
     let card = document.createElement('div')
@@ -37,7 +38,7 @@ pokemon.forEach((singleMon) => {
         return response.json();
     })
     .then(function(myJson) {
-        //console.log(myJson)
+        console.log(myJson.moves)
         createPokeCard(myJson)
     })
 })
