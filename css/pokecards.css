@@ -67,4 +67,10 @@ main {
     align-items: center;
 }
 
+.backImage {
+    opacity: 0.25;
+    
+    position: absolute;
+}
+
   

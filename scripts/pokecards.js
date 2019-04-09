@@ -30,12 +30,31 @@ if(pokeData.id !== 0) {
     return cardFront
 }
 
+function cardBackInfo(pokeData) {
+    let infoDiv = document.createElement('div')
+    let moveOne = document.createElement('p')
+    let moveTwo = document.createElement('p')
+    let moveThree = document.createElement('p')
+    let moveFour = document.createElement('p')
+    moveOne.textContent = pokeData.moves[0].move.name
+    moveTwo.textContent = pokeData.moves[1].move.name
+    moveThree.textContent = pokeData.moves[2].move.name
+    moveFour.textContent = pokeData.moves[3].move.name
+    infoDiv.appendChild(moveOne)
+    infoDiv.appendChild(moveTwo)
+    infoDiv.appendChild(moveThree)
+    infoDiv.appendChild(moveFour)
+    return infoDiv
+}
+
 function cardBack(pokeData) {
     let cardBack = document.createElement('div')
     let backImage = document.createElement('img')
+    backImage.className = 'backImage'
     backImage.src = `../images/pokeball.png`
     cardBack.className = 'card__face card__face--back'
     cardBack.appendChild(backImage)
+    cardBack.appendChild(cardBackInfo(pokeData))
     return cardBack
 }
 
@@ -61,7 +80,6 @@ pokemon.forEach((singleMon) => {
         return response.json();
     })
     .then(function(myJson) {
-        console.log(myJson.moves)
         createPokeCard(myJson)
     })
 })
