@@ -10,17 +10,61 @@ main {
     justify-content: space-around;
 }
 
-.box {
+.scene {
+    width: 220px;
+    height: 240px;
+    border: 1px solid #CCC;
+    margin: 4px;
+    perspective: 600px;
+}
+
+.card {
     margin: 8px;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
 }
 
-img {
-    padding: 4px;
-    width: 200px;
-    height: 200px;
-}
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--back {
+      text-align: center;
+    transform: rotateY(180deg);
+  }
 
-button {
+  figure {
+      margin: 0px;
+      padding: 4px;
+  }
+
+  figcaption {
+      padding: 4px;
+  }
+
+  button {
     width: 300px;
 }
+
+  img {
+    padding: 4px;
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+}
+
+  
