@@ -115,5 +115,14 @@ newPokemonButton.addEventListener('click', function () {
     createPokeCard(new Pokemon(80, newPokeName))
 });
 
+const poisonTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "poison")
+const flyingTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "flying")
+const normalTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "normal")
+const fireTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "fire")
+const waterTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "water")
+const psychicTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "psychic")
 
+pokeTypeButton.addEventListener('click', function() {
+    card.classlist.toggle('is-poison')
+})
 

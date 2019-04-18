@@ -2,14 +2,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #2a75bb;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
     width: 100%;
-    background-color: #e0ebe8
+    background-color: #2a75bb;
   }
   
   nav ul li {
@@ -19,7 +19,7 @@ nav ul {
   }
   
   nav ul li a {
-    color: rgb(229 177 58);
+    color: #ffcb05;
     text-decoration: none;
     }
 
@@ -60,22 +60,24 @@ nav ul {
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
+    background-color: #ffcb05;;
   }
   
   .card__face--back {
-      padding: 20px;
-      text-align: center;
+    padding: 20px;
+    text-align: center;
     transform: rotateY(180deg);
     
   }
 
   figure {
-      margin: 0px;
-      padding: 12px;
+    margin: 0px;
+    padding: 12px;
   }
 
   figcaption {
       padding: 8px;
+      color: #2a75bb;
   }
 
   button {
@@ -99,9 +101,19 @@ nav ul {
     position: relative;
     left: 20px;
     top: 24px;
+    color: #ffcb05;
 }
   
 h1 {
     text-align: center;
-    
+    color: #ffcb05;
+}
+
+h2 {
+    text-align: center;
+    color: #ffcb05;
+}
+
+h3 {
+    color: #ffcb05;
 }
