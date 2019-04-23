@@ -32,7 +32,6 @@ nav ul {
 .scene {
     width: 220px;
     height: 240px;
-    border: 1px solid #CCC;
     margin: 20px;
     perspective: 600px;
     display: flex;
@@ -40,7 +39,7 @@ nav ul {
     justify-content: center;
 }
 
-.card {
+.card { 
     text-align: center;
     width: 100%;
     height: 100%;
@@ -60,11 +59,10 @@ nav ul {
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
-    background-color: #ffcb05;;
+    background-color: #ffcb05;
   }
   
   .card__face--back {
-    padding: 20px;
     text-align: center;
     transform: rotateY(180deg);
     
@@ -93,15 +91,15 @@ nav ul {
 
 .backImage {
     opacity: 0.25;
-    left: 58px;
+    top: 20px;
+    left: 18px;
     position: absolute;
 }
 
 .infoDiv {
     position: relative;
-    left: 20px;
-    top: 24px;
-    color: #ffcb05;
+    top: 40px;
+    color: #2a75bb;
 }
   
 h1 {
