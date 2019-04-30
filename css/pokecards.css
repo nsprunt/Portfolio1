@@ -10,6 +10,8 @@ nav ul {
     justify-content: flex-end;
     width: 100%;
     background-color: #2a75bb;
+    margin: 0px;
+    padding: 0px;
   }
   
   nav ul li {
@@ -23,6 +25,19 @@ nav ul {
     text-decoration: none;
     }
 
+    a {
+        outline: none;
+        text-decoration: none;
+      }
+      
+      a:link {
+        color: #ffcb05;
+      }
+      
+      a:visited {
+        color: #ffcb05;
+      }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +45,7 @@ nav ul {
 }
 
 .scene {
+    border-radius: 20%;
     width: 220px;
     height: 240px;
     margin: 20px;
@@ -40,6 +56,7 @@ nav ul {
 }
 
 .card { 
+    border-radius: 20%;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -54,6 +71,7 @@ nav ul {
   }
   
   .card__face {
+    border-radius: 20%;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -76,6 +94,7 @@ nav ul {
   figcaption {
       padding: 8px;
       color: #2a75bb;
+      font-size: 1.3rem;
   }
 
   button {
@@ -101,8 +120,9 @@ nav ul {
 
 .infoDiv {
     position: relative;
-    top: 40px;
+    top: 8px;
     color: #2a75bb;
+
 }
   
 h1 {
@@ -117,4 +137,24 @@ h2 {
 
 h3 {
     color: #ffcb05;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.button {
+    border-radius: 15%;
+    width: 300px;
+    height: 50px;
+    line-height: 42px; 
+    font-size: 1.5rem;
+    border: 2px solid #ffcb05;
+    background-color: #2a75bb;
+    color: #ffcb05;
+}
+
+button:hover {
+    background: #ffcb05;
+    color: #2a75bb;
 }
